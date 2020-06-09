@@ -1,0 +1,38 @@
+Overview of all current existing effects.
+
+----------------------
+
+----------------------
+Aegis: Multiplies physical damage by 0,2. Multiplies magical damage by 0,2. 
+DivineShield: Multiplies physical damage by 0,5. Multiplies magical damage by 0,5. 
+No description yet.
+
+----------------------
+Deterioration: Deals 50 damage per round.
+No description yet.
+
+----------------------
+Agile: Has a 50% chance to dodge attacks (every skill by itself has a bool to check if it is dodgeable). Has a 50% chance to dodge attacks (every skill by itself has a bool to check if it is dodgeable). 
+Defensive Stance: Gain 20% Blockchance, 20 armor, and lose 20% damage output.
+Kamikaze: Multiplies incoming damage from all sources by 2. Multiplies outgoing damage from all sources by 2. Multiplies incoming damage from all sources by 2. Multiplies outgoing damage from all sources by 2. 
+MagicWeapon: Increases physical damage by 20.
+This affects all ranged Skillsmelee SkillsSpells.
+Cost increases by: mana = 5
+No description yet.
+Smoke: Has a 35% chance to dodge attacks (every skill by itself has a bool to check if it is dodgeable). Has a 35% chance to dodge attacks (every skill by itself has a bool to check if it is dodgeable). 
+SteadyEye: 
+This affects all ranged Skillsmelee SkillsSpells.
+Cost increases by: mana = 2
+Range increases by: 2
+Stun: No actions for the duration.
+Swiftness: Improves movementspeed by 1.
+
+----------------------
+Bleed: Deals 30 damage per round.
+Burn: Deals 70 damage per round.
+No description yet.
+Daze: Every skill needs twice as long to activate.
+KnockDown: No actions for the duration.
+Poison: Deals 40 damage per round.
+No description yet.
+

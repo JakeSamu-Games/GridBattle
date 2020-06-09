@@ -1,0 +1,23 @@
+Während Charakterauswahl:
+- Tasten 1-6 für Charakterauswahl.
+
+Während Spielzeit:
+- [SHIFT]+Zahl (Zahl hängt von Teamgröße ab) wählt Charakter aus.
+- Taste [M] ist default und für die Bewegung des Charakters
+- Tasten 1-X um einen Skill auszuwählen (falls X Skills vorhanden sind)
+- Taste [K] wählt den Autoattack aus.
+- Mit [Enter] wird die Phase des Teams beendet und es wechselt zum anderen Team.
+- Mit [ESC] kann ein aktuell gewirkter Zauber abgebrochen werden.
+- Bewegung oder Zielauswahl eines Skills mit WASD, Pfeiltasten oder der Maus (falls in Reichweite).
+- Oder alles mit Maus und Buttons auswählen.
+
+Auf der linken Seite sind die Panels mit dem Mausrad scrollbar. Sie besitzen nur noch kein automatisches nach unten setzen und kein Scrollbar.
+
+- Tab = NextCharacter
+- Space = Autoattack
+- Rechte Maustaste = Bewegen initialisieren (also wie Taste [M])
+
+In Überlegung:
+- Maus über ein Feld bewegen zeigt bereits alles an
+--- Maus klicken macht automatisch NextCharacter bzw beim letzten Charakter FinishRound
+Gerne Feedback dazu

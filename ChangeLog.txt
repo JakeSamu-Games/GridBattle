@@ -1,0 +1,30 @@
+4.6.2020
+- bug, Bug, Buuugh
+
+2.6.2020
+- War ja klar, dass ich direkt im Nachgang einen Bug finde ... wird bestimmt noch mehrere geben die in den nächsten Tagen behoben werden.
+- Neue Anzeige wenn eine Seite gewonnen hat.
+
+1.6.2020
+- Vor Spielstart sind jetzt Teamgröße, Mapgröße und für jeden Charakter die Skills auswählbar.
+- Der GameLog auf der linken Seite scrollt automatisch nach unten und ist noch immer manuell scrollbar.
+- Skills sind derzeit in Melee, Ranged und Spells unterteilt.
+- Verwenden 2 Charaktere Skills mit gleicher Priorität, so wird die Reihenfolge randomisiert entschieden (ich verspreche nicht, dass eine gute Randomness gewährleistet ist). Der Zufall ist pro Priorität und nicht pro Runde.
+- Quit-Button hinzugefügt
+- Die Prioritäten der Skills sind aktuell auf schnell, mittel und langsam gesetzt. Dies wird in der Zukunft weiter ausgefeilt, wie noch viele weitere Dinge anstehen.
+
+26.5.2020
+- Bugs entfernt.
+- Diese Version ist zum debuggen da, besitzt keine große Änderungen zu der letzen Version.
+- Skills wurden überarbeitet und bisschen angepasst.
+
+23.5.2020
+- Priest, Mage, Hunter und Rogue sind vorhanden.
+- Einige Bugs bei den Skills behoben.
+- Anpassung der visuellen Darstellung für mehr als 800x600 Pixel.
+- Kleine Änderungen beim User-Inputs.
+
+19.5.2020
+- Es sind zurzeit die Charaktere "Mage" und "Hunter" implementiert. Sie sind nicht gebalanct oder vollständig debugt. Das ist alles ein Work in Progress. Diese Version ist einzig und allein da, damit ersichtlich wird, wohin diese Entwicklung gehen kann. Es ist auch die erste Version die überhaupt anderen Leuten zum Spielen gegeben wird und es fehlen noch seeeeeehr viele Implementationen.
+- Mage = Charakter 3
+- Hunter = Charakter 5

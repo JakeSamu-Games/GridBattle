@@ -1,0 +1,717 @@
+Overview of all current existing skills.
+
+----------------------
+Warrior
+
+Sword - No description yet.
+Mana: 0, Priority: 99, Range: 2   AT(AD): 1   CD: 0, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Physical damage: 75
+
+
+Bleed Out - No description yet.
+Mana: 30, Priority: 99, Range: 2   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - IfOneEffect
+    - Effect Bleed (Time: 0, Count: 0)
+      - Then SingleTarget on enemies
+          - 1 WeaponAttack
+            - Effect Bleed (Time: 8, Count: 0)
+      - Else SingleTarget on enemies
+          - 1 WeaponAttack
+
+
+DefensiveStance - No description yet.
+Mana: 30, Priority: 10, Range: 0   AT(AD): 1   CD: 8, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect DefensiveStance (Time: 3, Count: 0)
+
+
+HeavyBlow - No description yet.
+Mana: 30, Priority: 80, Range: 2   AT(AD): 1   CD: 10, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Physical damage: 150
+    - Effect KnockDown (Time: 2, Count: 0)
+
+
+Open Wound - No description yet.
+Mana: 20, Priority: 99, Range: 2   AT(AD): 1   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - IfOneEffect
+    - Effect Bleed (Time: 0, Count: 0)
+      - Then SingleTarget on enemies
+          - 1 WeaponAttack
+            - Effect Wound (Time: 3, Count: 0)
+      - Else SingleTarget on enemies
+          - 1 WeaponAttack
+
+
+Powerstrike - No description yet.
+Mana: 15, Priority: 99, Range: 2   AT(AD): 1   CD: 4, Targeting: position
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack and additional damage:
+    - Physical damage: 75
+
+
+Shield Bash - No description yet.
+Mana: 20, Priority: 80, Range: 2   AT(AD): 1   CD: 8, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Physical damage: 50
+    - Effect Daze (Time: 2, Count: 0)
+
+
+Shield Up - No description yet.
+Mana: 30, Priority: 10, Range: 0   AT(AD): 2   CD: 6, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect Block (Time: 5, Count: 0)
+
+
+Slash - No description yet.
+Mana: 20, Priority: 99, Range: 2   AT(AD): 1   CD: 4, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Bleed (Time: 3, Count: 0)
+
+
+Spin - No description yet.
+Mana: 30, Priority: 99, Range: 0   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+AOE on all
+  - AOEDamage
+
+
+----------------------
+Priest
+
+Staff - No description yet.
+Mana: 0, Priority: 99, Range: 4   AT(AD): 1   CD: 0, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Magical damage: 50
+
+
+Advert Adversity - No description yet.
+Mana: 100, Priority: 99, Range: 4   AT(AD): 1   CD: 10, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleHeal
+
+
+Aegis - No description yet.
+Mana: 40, Priority: 50, Range: 4   AT(AD): 1   CD: 6, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleNoDamage
+    - Effect Aegis (Time: 1, Count: 0)
+
+
+Divine Punishment - No description yet.
+Mana: 40, Priority: 99, Range: 4   AT(AD): 2   CD: 4, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Magical damage: 200
+
+
+Divine Shield - No description yet.
+Mana: 70, Priority: 150, Range: 4   AT(AD): 2   CD: 8, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleNoDamage
+    - Effect DivineShield (Time: 3, Count: 0)
+
+
+Healing Hands - No description yet.
+Mana: 40, Priority: 99, Range: 2   AT(AD): 2   CD: 6, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleHeal
+
+
+Large Heal - No description yet.
+Mana: 80, Priority: 99, Range: 4   AT(AD): 4   CD: 10, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleHeal
+
+
+Medium Heal - No description yet.
+Mana: 60, Priority: 99, Range: 4   AT(AD): 3   CD: 8, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleHeal
+
+
+Regeneration - No description yet.
+Mana: 60, Priority: 99, Range: 4   AT(AD): 3   CD: 8, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleNoDamage
+    - Effect Regeneration (Time: 8, Count: 0)
+
+
+Small Heal - No description yet.
+Mana: 40, Priority: 99, Range: 4   AT(AD): 2   CD: 6, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleHeal
+
+
+----------------------
+Mage
+
+Staff - No description yet.
+Mana: 0, Priority: 99, Range: 4   AT(AD): 1   CD: 0, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Magical damage: 50
+
+
+Chain Lightning - No description yet.
+Mana: 30, Priority: 99, Range: 3   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+Chain on enemies
+  - ChainDamage
+    - Magical damage: 120
+
+
+Channeling - No description yet.
+Mana: 0, Priority: 99, Range: 0   AT(AD): 2   CD: 10, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleHeal
+
+
+Fireball - No description yet.
+Mana: 80, Priority: 99, Range: 6   AT(AD): 3   CD: 6, Targeting: position
+Has components:
+AOE on enemies
+  - AOEDamage
+    - Magical damage: 300
+
+
+FireLance - No description yet.
+Mana: 50, Priority: 99, Range: 1   AT(AD): 2   CD: 4, Targeting: position
+Has components:
+Lineshot on enemies
+  - LineDamage
+
+
+Ignite - No description yet.
+Mana: 30, Priority: 99, Range: 0   AT(AD): 2   CD: 6, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Augment Not set yet. (Time: 0, Count: 1)
+       Burn for 2 rounds
+
+
+Inferno - No description yet.
+Mana: 60, Priority: 99, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+AOE on enemies
+  - AOEDamage
+    - Magical damage: 200
+
+
+Lightning Arrow - No description yet.
+Mana: 20, Priority: 99, Range: 8   AT(AD): 2   CD: 2, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Magical damage: 120
+
+
+Lightning Strike - No description yet.
+Mana: 80, Priority: 99, Range: 6   AT(AD): 3   CD: 8, Targeting: position
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+
+
+Magic Missile - No description yet.
+Mana: 40, Priority: 99, Range: 6   AT(AD): 2   CD: 4, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Magical damage: 200
+
+
+Mana Shot - No description yet.
+Mana: 40, Priority: 99, Range: 6   AT(AD): 3   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Magical damage: 270
+
+
+Manaball - No description yet.
+Mana: 80, Priority: 99, Range: 8   AT(AD): 3   CD: 6, Targeting: position
+Has components:
+AOE on enemies
+  - AOEDamage
+    - Magical damage: 200
+
+
+Shock - No description yet.
+Mana: 40, Priority: 25, Range: 6   AT(AD): 1   CD: 12, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Effect Interrupt (Time: 0, Count: 0)
+
+
+Teleport - No description yet.
+Mana: 50, Priority: 100, Range: 6   AT(AD): 2   CD: 8, Targeting: position
+Has components:
+Teleport
+  - Teleport
+
+
+----------------------
+Hexer
+
+Staff - No description yet.
+Mana: 0, Priority: 99, Range: 4   AT(AD): 1   CD: 0, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Magical damage: 50
+
+
+Daze - No description yet.
+Mana: 30, Priority: 99, Range: 4   AT(AD): 2   CD: 8, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleNoDamage
+    - Effect Daze (Time: 4, Count: 0)
+
+
+Deterioration - No description yet.
+Mana: 50, Priority: 99, Range: 4   AT(AD): 2   CD: 8, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleNoDamage
+    - Effect Deterioration (Time: 5, Count: 0)
+
+
+Disable Spell - No description yet.
+Mana: 40, Priority: 99, Range: 4   AT(AD): 2   CD: 10, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleNoDamage
+    - Effect Disable (Time: 0, Count: 0)
+
+
+Enchantment Converter - No description yet.
+Mana: 40, Priority: 99, Range: 4   AT(AD): 2   CD: 10, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - IfEffectType
+
+
+Increase Status - No description yet.
+Mana: 40, Priority: 99, Range: 4   AT(AD): 2   CD: 10, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - IncreaseStatus
+
+
+Interrupt - No description yet.
+Mana: 50, Priority: 25, Range: 4   AT(AD): 1   CD: 10, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - InterruptDamage
+    - Effect Interrupt (Time: 0, Count: 0)
+
+
+Manadrain - No description yet.
+Mana: 0, Priority: 99, Range: 4   AT(AD): 3   CD: 10, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Manaleech: 40
+
+
+Parasite - No description yet.
+Mana: 50, Priority: 99, Range: 4   AT(AD): 2   CD: 10, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleNoDamage
+    - Effect Parasite (Time: 5, Count: 0)
+
+
+Recharge - No description yet.
+Mana: 50, Priority: 99, Range: 4   AT(AD): 3   CD: 6, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect CooldownReducer (Time: 0, Count: 0)
+
+
+Spell Thief - Steals a skill for 10 turns that is not currently used.
+Mana: 60, Priority: 99, Range: 4   AT(AD): 3   CD: 20, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SpellThief
+    - Effect SpellSwap (Time: 10, Count: 0)
+
+
+----------------------
+Hunter
+
+Bow - No description yet.
+Mana: 0, Priority: 99, Range: 6   AT(AD): 1   CD: 0, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Physical damage: 50
+
+
+Burning Arrow - No description yet.
+Mana: 25, Priority: 99, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Burn (Time: 2, Count: 0)
+
+
+Cripple Shot - No description yet.
+Mana: 25, Priority: 50, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Cripple (Time: 3, Count: 0)
+SingleTarget on enemies
+  - WeaponAttack (1)
+
+
+Disorientation Shot - No description yet.
+Mana: 20, Priority: 99, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+
+
+Doubleshot - No description yet.
+Mana: 20, Priority: 99, Range: 6   AT(AD): 1   CD: 5, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 2 WeaponAttacks
+
+
+Exploding Arrow - No description yet.
+Mana: 50, Priority: 99, Range: 6   AT(AD): 3   CD: 8, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+AOE on enemies
+  - AOEDamage
+    - Physical damage: 150
+
+
+ImbueMagicWeapon - No description yet.
+Mana: 30, Priority: 99, Range: 0   AT(AD): 2   CD: 8, Targeting: friends
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect MagicWeapon (Time: 0, Count: 8)
+
+
+Interrupt Shot - No description yet.
+Mana: 30, Priority: 25, Range: 6   AT(AD): 1   CD: 12, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Interrupt (Time: 0, Count: 0)
+
+
+Long Shot - No description yet.
+Mana: 10, Priority: 99, Range: 8   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+
+
+Naturheilkunde - No description yet.
+Mana: 40, Priority: 99, Range: 0   AT(AD): 2   CD: 5, Targeting: friends
+Has components:
+SingleTarget on self
+  - SingleHeal
+
+
+Poison Arrows - No description yet.
+Mana: 40, Priority: 99, Range: 0   AT(AD): 3   CD: 6, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Augment Not set yet. (Time: 4, Count: 0)
+       Poison for 2 rounds
+
+
+Snipe - No description yet.
+Mana: 20, Priority: 99, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack and additional damage:
+    - Physical damage: 120
+
+
+Steady Eye - No description yet.
+Mana: 30, Priority: 99, Range: 0   AT(AD): 2   CD: 8, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect SteadyEye (Time: 8, Count: 0)
+
+
+Volley - No description yet.
+Mana: 30, Priority: 99, Range: 6   AT(AD): 2   CD: 6, Targeting: position
+Has components:
+AOE on enemies
+  - AOEDamage
+
+
+----------------------
+Rogue
+
+Sword - No description yet.
+Mana: 0, Priority: 99, Range: 2   AT(AD): 1   CD: 0, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Physical damage: 75
+
+
+ComboAttack - No description yet.
+Mana: 30, Priority: 99, Range: 2   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - IfOneEffect
+    - Effect KnockDown (Time: 0, Count: 0)
+      - Then SingleTarget on enemies
+          - 1 WeaponAttack each multiplied with 4
+      - Else SingleTarget on enemies
+          - 1 WeaponAttack
+
+
+Cut Down - No description yet.
+Mana: 25, Priority: 99, Range: 2   AT(AD): 1   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+SingleTarget on enemies
+  - IfOneEffect
+    - Effect KnockDown (Time: 0, Count: 0)
+      - Then SingleTarget
+          - SingleNoDamage
+            - Effect Bleed (Time: 3, Count: 0)
+      - Else 
+
+
+Doubleattack - No description yet.
+Mana: 25, Priority: 99, Range: 2   AT(AD): 1   CD: 3, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 2 WeaponAttacks
+
+
+Exploit Weakness - No description yet.
+Mana: 25, Priority: 99, Range: 2   AT(AD): 1   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+SingleTarget on enemies
+  - IfOneEffect
+    - Effect Bleed (Time: 0, Count: 0)
+      - Then SingleTarget on enemies
+          - SingleNoDamage
+            - Effect Bleed (Time: 2, Count: 0)
+      - Else 
+SingleTarget on enemies
+  - IfOneEffect (1)
+SingleTarget on enemies
+  - IfOneEffect (2)
+    - Effect KnockDown (Time: 0, Count: 0)
+      - Then SingleTarget on enemies
+          - SingleNoDamage
+            - Effect Bleed (Time: 2, Count: 0)
+      - Else 
+
+
+Improve Dodge - No description yet.
+Mana: 40, Priority: 99, Range: 0   AT(AD): 1   CD: 12, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect Agile (Time: 2, Count: 0)
+
+
+Kamikaze - No description yet.
+Mana: 25, Priority: 99, Range: 0   AT(AD): 1   CD: 8, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect Kamikaze (Time: 5, Count: 0)
+
+
+Legswipe - No description yet.
+Mana: 50, Priority: 75, Range: 2   AT(AD): 1   CD: 12, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleNoDamage
+    - Effect KnockDown (Time: 3, Count: 0)
+
+
+Open Veins - No description yet.
+Mana: 35, Priority: 99, Range: 2   AT(AD): 1   CD: 3, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Bleed (Time: 4, Count: 0)
+
+
+Shadow Step - No description yet.
+Mana: 30, Priority: 50, Range: 2   AT(AD): 1   CD: 8, Targeting: position
+Has components:
+Teleport
+  - Teleport
+AOE on enemies
+  - AOEDamage
+    - Physical damage: 75
+
+
+Smokebomb - No description yet.
+Mana: 50, Priority: 25, Range: 0   AT(AD): 1   CD: 10, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect Smoke (Time: 3, Count: 0)
+
+
+Strife - No description yet.
+Mana: 50, Priority: 50, Range: 2   AT(AD): 1   CD: 8, Targeting: position
+Has components:
+Teleport
+  - Teleport
+SingleTarget on self
+  - SingleNoDamage
+    - Effect Agile (Time: 1, Count: 0)
+
+
+Swift Movement - No description yet.
+Mana: 30, Priority: 99, Range: 0   AT(AD): 1   CD: 10, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect Swiftness (Time: 4, Count: 0)
+
+
+Throw poisonous dagger - No description yet.
+Mana: 30, Priority: 99, Range: 4   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Poison (Time: 3, Count: 0)
+
+
+Vampire Daggers - No description yet.
+Mana: 60, Priority: 99, Range: 0   AT(AD): 3   CD: 10, Targeting: position
+Has components:
+SingleTarget on self
+  - SingleNoDamage
+    - Effect LifeLeech (Time: 0, Count: 5)
+
+
+----------------------
+TestCharacter
+
+Bow - No description yet.
+Mana: 0, Priority: 99, Range: 6   AT(AD): 1   CD: 0, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - SingleDamage
+    - Physical damage: 50
+
+
+Burning Arrow - No description yet.
+Mana: 25, Priority: 99, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Burn (Time: 2, Count: 0)
+
+
+Cripple Shot - No description yet.
+Mana: 25, Priority: 50, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+    - Effect Cripple (Time: 3, Count: 0)
+SingleTarget on enemies
+  - WeaponAttack (1)
+
+
+Disorientation Shot - No description yet.
+Mana: 20, Priority: 99, Range: 6   AT(AD): 2   CD: 6, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+
+
+Doubleshot - No description yet.
+Mana: 20, Priority: 99, Range: 6   AT(AD): 1   CD: 5, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 2 WeaponAttacks
+
+
+Exploding Arrow - No description yet.
+Mana: 50, Priority: 99, Range: 6   AT(AD): 3   CD: 8, Targeting: enemies
+Has components:
+SingleTarget on enemies
+  - 1 WeaponAttack
+AOE on enemies
+  - AOEDamage
+    - Physical damage: 150
+
+
+Regeneration - No description yet.
+Mana: 60, Priority: 99, Range: 4   AT(AD): 3   CD: 8, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleNoDamage
+    - Effect Regeneration (Time: 8, Count: 0)
+
+
+Healing Hands - No description yet.
+Mana: 40, Priority: 99, Range: 2   AT(AD): 2   CD: 6, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleHeal
+
+
+Divine Shield - No description yet.
+Mana: 70, Priority: 150, Range: 4   AT(AD): 2   CD: 8, Targeting: friends
+Has components:
+SingleTarget on friends
+  - SingleNoDamage
+    - Effect DivineShield (Time: 3, Count: 0)
+
+
