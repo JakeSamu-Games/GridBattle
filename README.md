@@ -1,7 +1,7 @@
 # GridBattle
 Currently not working on it
 
-#Info
+# Info
 Um zu spielen die zip-Datei runterladen, entpacken und darin die Datei "GridBattle.exe" starten.
 
 Grundkonzept:
